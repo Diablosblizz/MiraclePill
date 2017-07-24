@@ -44,7 +44,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        provincePicketBtn.setTitle(provinces[row], for: UIControlState());
+        provincePicketBtn.setTitle(provinces[row], for: UIControlState.application);
         provincePicker.isHidden = true;
     }
     
